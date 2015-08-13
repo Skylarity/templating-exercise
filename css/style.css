@@ -1,0 +1,86 @@
+/********************************************
+* Header Styles
+********************************************/
+
+header {
+	padding: 20px 0;
+	background-color: #333333;
+	color: #FFFFFF;
+}
+
+h1 {
+	margin: 0;
+	padding: 0;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+.nav li a {
+	color: #FFFFFF;
+}
+
+.nav li a:hover {
+	color: #333333;
+}
+
+/********************************************
+* Body Styles
+********************************************/
+
+body {
+	background: url(../img/bg.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+	color: #FFFFFF;
+}
+
+.content {
+	padding: 20px 0;
+}
+
+.comic {
+	font-family: Comic Sans, cursive;
+}
+
+/********************************************
+* Footer Styles
+********************************************/
+footer {
+	padding: 20px 0;
+	background-color: #333333;
+	color: #FFFFFF;
+}
+
+h3 {
+	margin: 0;
+	padding: 0;
+}
+
+/***
+* Flexbox Sticky Footer
+* http://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
+***/
+
+/*corrects IE min-height bug*/
+html {
+	display: flex;
+}
+
+body {
+	width: 100%;
+}
+
+.sfooter {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.sfooter-content {
+	flex: 1 0 auto;
+}

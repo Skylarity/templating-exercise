@@ -1,48 +1,67 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8"/>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<?php
+$PAGE_TITLE = "Templating Exercise";
+require_once("php/lib/head-utils.php");
+?>
+<body class="sfooter">
+	<div class="sfooter-content">
+		<header>
+			<?php require_once("php/lib/header.php"); ?>
+		</header>
 
-		<!-- Bootstrap Latest compiled and minified CSS -->
-		<link type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
+		<div class="container content">
+			<div class="row">
+				<section class="col-md-4">
+					<?php require_once("php/lib/side-panel.php"); ?>
+				</section>
 
-		<!-- Optional Bootstrap theme -->
-		<link type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"
-			  rel="stylesheet"/>
+				<main class="col-md-8">
+					<h2>
+						This is the main content.
+					</h2>
 
-		<!-- ////////////////////////////////////////////////
-		//// LINK TO YOUR CUSTOM CSS FILES HERE
-		//// <link type="text/css" href="css/style.css" rel="stylesheet"/>
-		///////////////////////////////////////////////////// -->
+					<p>
+						Now what are the possibilities of warp drive? Cmdr Riker's nervous system has been invaded by an
+						unknown microorganism. The organisms fuse to the nerve, intertwining at the molecular level.
+						That's why the transporter's biofilters couldn't extract it. The vertex waves show a K-complex
+						corresponding to an REM state. The engineering section's critical. Destruction is imminent.
+						Their robes contain ultritium, highly explosive, virtually undetectable by your transporter.
+					</p>
 
-		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		<!--[if lt IE 9]>
-		<script type="text/javascript" src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-		<script type="text/javascript" src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-		<![endif]-->
-
-		<!-- js-cookie -->
-		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/js-cookie/2.0.2/js.cookie.min.js"></script>
-
-		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-		<script type="text/javascript"
-				src="//cdnjs.cloudflare.com/ajax/libs/jquery.form/3.51/jquery.form.min.js"></script>
-		<script type="text/javascript"
-				src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
-		<script type="text/javascript"
-				src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/additional-methods.min.js"></script>
-
-		<!-- Latest compiled and minified Bootstrap JavaScript, all compiled plugins included -->
-		<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-		<title>Bootstrap 101 Template (DDC Version!)</title>
-	</head>
-	<body>
-		<div class="container">
-			<h1>Hello, world! I'm a Bootstrap page! :D</h1>
+					<p>
+						Deflector power at maximum. Energy discharge in six seconds. Warp reactor core primary coolant
+						failure. Fluctuate phaser resonance frequencies. Resistance is futile. Recommend we adjust
+						shield harmonics to the upper EM band when proceeding. These appear to be some kind of
+						power-wave-guide conduits which allow them to work collectively as they perform ship functions.
+						Increase deflector modulation to upper frequency band.
+					</p>
+					
+					<form>
+						<div class="form-group">
+							<label for="exampleInputEmail1">Email address</label>
+							<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+						</div>
+						<div class="form-group">
+							<label for="exampleInputPassword1">Password</label>
+							<input type="password" class="form-control" id="exampleInputPassword1"
+								   placeholder="Password">
+						</div>
+						<div class="form-group">
+							<p class="help-block">Sell your soul. Do it.</p>
+						</div>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox" checked> Opt in to selling your soul
+							</label>
+						</div>
+						<button type="submit" class="btn btn-success">Submit</button>
+					</form>
+				</main>
+			</div>
 		</div>
-	</body>
+	</div>
+
+	<footer>
+		<?php require_once("php/lib/footer.php"); ?>
+	</footer>
+</body>
 </html>
